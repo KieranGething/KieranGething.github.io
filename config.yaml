@@ -39,26 +39,6 @@ params:
     height: 50
     url: logo.jpg
     width: 50
-  extraHead: |
-    <style>
-      @media (max-width: 768px) {
-        .navbar-menu { display: none; }
-        .navbar-burger { display: block; cursor: pointer; }
-      }
-    </style>
-  extraFooter: |
-    <script>
-      document.addEventListener('DOMContentLoaded', () => {
-        const burger = document.querySelector('.navbar-burger');
-        const menu = document.querySelector('.navbar-menu');
-        if (burger && menu) {
-          burger.addEventListener('click', () => {
-            burger.classList.toggle('is-active');
-            menu.classList.toggle('is-active');
-          });
-        }
-      });
-    </script>
 markup:
   defaultMarkdownHandler: goldmark
   goldmark:
